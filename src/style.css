@@ -1,0 +1,24 @@
+body {
+  background-color: #89b6ac;
+  background-repeat: no-repeat;
+   background-image: url("https://www.bbva.com/wp-content/uploads/2016/11/imagen_apertura_evitar_descubiertos_1150x437.jpg");
+  background-position-y: 100px;
+  background-position: left;
+  min-height: 300px;
+  
+}
+ 
+header {
+  background-color: #8ebebc;
+  height: 25px;
+  width: 40%;
+  margin: 45px;
+  text-align: center;
+  color: white;
+  line-height: 20px;
+}
+
+footer {
+  margin: 200px;
+
+}

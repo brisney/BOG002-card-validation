@@ -10,27 +10,32 @@
     <main>
 
       <div>
-       <label for="espacioparanombre">Nombre</label>
-         <input type="text" id="espacioparanombre" size="30" placeholder="Ingresa tu nombre" required></input>
-      </div>
+        <label for="espacioparanombre">Nombre</label>
+        <input type="text" id="espacioparanombre" size="30" placeholder="Ingresa tu nombre" required></input>
+     </div>
 
-      <div>
-       <label for="espacioparaelnumtarjeta">Número de tarjeta</label>
-        <input type="number" id="espacioparaelnumtarjeta" size="15" maxlength="15"  minlength="4"  required></input>
+     <div>
+      <label for="espacioparaelnumtarjeta">Número de tarjeta</label>
+       <input type="number" id="espacioparaelnumtarjeta" size="15" maxlength="15"  minlength="4"  required></input>
+     </div>
+
+     <div>
+       <label for="espaciofechavencimiento">Escribe la fecha de vencimiento</label>
+        <input type="date" id="espaciofechavencimiento" value="2021-02-26" min="2000-01-01" max="2050-12-31">
+     </div>
+
+     <div>
+       <label for="espacioparaedad">Escribe tu edad</label>
+        <input type="number" id="espacioparaedad" size="2" min="2" max="99" maxlength="2">
+     </div>
+
+     <div>
+     <button type="submit" value="Submit">validar</button>
+     <button type="reset" value="Reset">Borrar todo</button>
+
+     </div>
       
-
-      
-        <label for="espaciofechavencimiento">Escribe la fecha de vencimiento</label>
-         <input type="date" id="espaciofechavencimiento" value="2021-02-26" min="2000-01-01" max="2050-12-31">
-      </div>
-
-      <div>
-        <label for="espacioparaedad">Escribe tu edad</label>
-         <input type="number" id="espacioparaedad" size="2" min="2" max="99" maxlength="2">
-      </div>
-      <button type="submit" value="Submit">validar</button>
-      <button type="reset" value="Reset">Borrar todo</button>
-    </main>
+      </main>  
     
     <footer>Equipo T9 jessica Joya Brisney Quiñonez</footer>
     <script src="index.js" type="module"></script>
