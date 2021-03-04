@@ -11,28 +11,28 @@
     <header>En esta pagina web vas a poder validar el número de tu tarjeta de crédito</header>
     <main>
 |     <section class="cuadroformulario">
-        <header>Ingresa los siguientes datos</header>
+        <header class="titulo">Ingresa los siguientes datos</header>
         <form id="conjuntodatos" class="cuadro">
          <!-- <div class="casilla" -->
-          <div>
-            <label for="espacioparanombre" class="casilla">Nombre
+          <div class="casillas">
+            <label for="espacioparanombre">Nombre
             <input type="text" id="espacioparanombre" size="30" placeholder="Ingresa tu nombre" required></input>
             </label>
           </div>
-          <div>
+          <div class="casillas">
             <label for="espacioparaelnumtarjeta" class="casilla">Número de tarjeta
             <input type="text" id="espacioparaelnumtarjeta" size="15"  minlength="16" maxlength="16" required>
             </label>
           </div>
 
-          <div>
-            <label for="espaciofechavencimiento" class="casilla">Escribe la fecha de vencimiento
+          <div class="casillas">
+            <label for="espaciofechavencimiento">Escribe la fecha de vencimiento
             <input type="date" id="espaciofechavencimiento" value="2021-02-26" min="2000-01-01" max="2050-12-31">
             </label>
           </div>
 
-          <div>
-            <label  for="espacioparaedad" class="casilla">Escribe tu edad
+          <div class="casillas">
+            <label  for="espacioparaedad">Escribe tu edad
             <input type="number" id="espacioparaedad" size="2" min="2" max="99" maxlength="2">
             </label>
           </div>

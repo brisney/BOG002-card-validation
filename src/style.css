@@ -1,13 +1,11 @@
 body {
   background-color: #89b6ac;
   background-repeat: no-repeat;
+  min-height: 100%;
    background-image: url("https://www.bbva.com/wp-content/uploads/2016/11/imagen_apertura_evitar_descubiertos_1150x437.jpg");
    background-size: cover;
+   
 }
-   body .caja {
-    min-height: 100px;
-    align-items: center; 
-  } 
 header {
   background-color: #8ebebc;
   height: 25px;
@@ -16,6 +14,25 @@ header {
   text-align: center;
   color: white;
   line-height: 20px;
+}
+body .casillas {
+  color: blue;
+}
+ body .titulo {
+ color: crimson;
+ height: 10px 10px 10px 10px;
+ text-align: center;
+ background-color: rgb(126, 133, 115);
+}
+body .cuadroformulario {
+  margin: 0 auto; 
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #3b3b3b;
+  padding: 20px 20px 20px 20px;
+  background: cyan;
+  border-radius: 10px;
+  position: relative;
 }
 footer {
   margin: 200px;
