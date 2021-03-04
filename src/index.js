@@ -11,7 +11,7 @@ function cambiarHTML (numerodeti) //declaran la función cambiar
     
     console.log (typeof numerodeti)
 
-    document.getElementById("formulario").innerHTML= "Hola " + nombre + " tu numero de tarjeta es " + numerodeti +"" ;
+    document.getElementById("conjuntodatos").innerHTML= "Hola " + nombre + " tu numero de tarjeta es " + numerodeti +"" ;
     var tamanostring  = numerodeti.length;
         var cadenaInvertida = "";
     

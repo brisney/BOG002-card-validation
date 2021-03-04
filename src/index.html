@@ -10,49 +10,41 @@
     <script src="index.js" type="module"></script>
     <header>En esta pagina web vas a poder validar el número de tu tarjeta de crédito</header>
     <main>
-| 
-   
+|     <section class="cuadroformulario">
+        <header>Ingresa los siguientes datos</header>
+        <form id="conjuntodatos" class="cuadro">
+         <!-- <div class="casilla" -->
+          <div>
+            <label for="espacioparanombre" class="casilla">Nombre
+            <input type="text" id="espacioparanombre" size="30" placeholder="Ingresa tu nombre" required></input>
+            </label>
+          </div>
+          <div>
+            <label for="espacioparaelnumtarjeta" class="casilla">Número de tarjeta
+            <input type="text" id="espacioparaelnumtarjeta" size="15"  minlength="16" maxlength="16" required>
+            </label>
+          </div>
 
-      <div id="formulario" class="caja">
-      <div>
-       <label for="espacioparanombre">Nombre</label>
-        <input type="text" id="espacioparanombre" size="30" placeholder="Ingresa tu nombre" required></input>
-     </div>
+          <div>
+            <label for="espaciofechavencimiento" class="casilla">Escribe la fecha de vencimiento
+            <input type="date" id="espaciofechavencimiento" value="2021-02-26" min="2000-01-01" max="2050-12-31">
+            </label>
+          </div>
 
-   <!-- prueba para git hub -->
+          <div>
+            <label  for="espacioparaedad" class="casilla">Escribe tu edad
+            <input type="number" id="espacioparaedad" size="2" min="2" max="99" maxlength="2">
+            </label>
+          </div>
 
-   <div p id="formulario3"
-    
-    button=onclickg
-      <input type="text" id="espacioparanombre" size="30" placeholder="Ingresa tu nombre d eprue"  size="15" required></input>
-   </div>
-
-<!-- fin de la prueba -->
-     <div>
-      <label for="espacioparaelnumtarjeta">Número
-       <input type="text" id="espacioparaelnumtarjeta" size="15"  minlength="16" maxlength="16" required>
-      </label>
-     </div>
-
-     <div>
-       <label for="espaciofechavencimiento">Escribe la fecha de vencimiento
-        <input type="date" id="espaciofechavencimiento" value="2021-02-26" min="2000-01-01" max="2050-12-31">
-      </label>
-     </div>
-
-     <div>
-       <label  for="espacioparaedad">Escribe tu edad</label>
-        <input type="number" id="espacioparaedad" size="2" min="2" max="99" maxlength="2">
-     </div>
-
-     <div>
-     <button type="submit" id="validar"    value="Submit">validar</button>
-     <button type="reset" value="Reset">Borrar todo</button>
-
-    
-     </div>
-      </div>
-      </main>  
+          <div>
+            <button type="submit" id="validar" class="botones" value="Submit">validar</button>
+            <button type="reset" value="Reset" class="botones">Borrar todo</button>
+          </div>
+       <!-- </div> -->
+      </form>
+     </section>
+    </main>  
     
     <footer>Equipo T9 jessica Joya Brisney Quiñonez</footer>
     
