@@ -1,49 +1,43 @@
+//se llama al objeto de validación de la tarjeta que se encuentra en validator.js
 import validator from './validator.js';
 
 console.log(validator);
 
+//realizamos el evento con un onclick ejecutando la función cambiar HTML para que no permita acceder al siguiente campo sin rellenar 
 
-
-function cambiarHTML (numerodeti) //declaran la función cambiar
-{ 
+document.getElementById("validar").onclick = function () { // se ejecuta hasta que se da click
     
-    var nombre = document.getElementById("espacioparanombre").value //se esta declarando una variable que va a ser igual a lo que el usuario ingreso en espacio para nombre
-    
-    console.log (typeof numerodeti)
-
-    document.getElementById("conjuntodatos").innerHTML= "Hola " + nombre + " tu numero de tarjeta es " + numerodeti +"" ;
-    var tamanostring  = numerodeti.length;
-        var cadenaInvertida = "";
-    
-        while (tamanostring>=0) {
-            cadenaInvertida = cadenaInvertida + numerodeti.charAt(tamanostring);
-            tamanostring--;
-          }
-    
-          console.log (cadenaInvertida);
-    }
+    var imputnumerotarjeta = document.getElementById("espacioparaelnumtarjeta");
+    var numerodeti = imputnumerotarjeta.value;  
+    if (numerodeti != ""){ cambiarHTML(numerodeti);}
+    console.log(numerodeti)
    
-
-
-
-// function validar(numerodeti) {
-//     var tamanostring  = numerodeti.length;
-//     var cadenaInvertida = "";
-
-//     while (tamanostring>=0) {
-//         cadenaInvertida = cadenaInvertida + numerodeti.charAt(tamanostring);
-//         tamanostring--;
-//       }
-
-//       console.log (cadenaInvertida);
-// }
-
-document.getElementById("validar").onclick = function (){ // se ejecuta hasta que se da click
-
-    var numerodeti = document.getElementById("espacioparaelnumtarjeta").value  //aqui se imprime hola más nombre
-    
-    cambiarHTML(numerodeti);
 }
 
+//se hace una funcion que imprime los datos ingresados por el usuario en otro cmapo 
+
+function cambiarHTML (numerodeti) {//declaran la función en la vamos a mostrar el texto 
+    var nombre = document.getElementById("espacioparanombre").value; //usando los datos de espacioparanombre y convirtiendolos en la variable nombre JS
+    var fechaven = document.getElementById("espaciofechavencimiento").value;
+        document.getElementById("cuadroform").innerHTML= "Hola " + nombre + " tu numero de tarjeta es " + numerodeti +" y vence el dia " + fechaven ;//imprimiendo el mensjaes con los datos ingresados por el usuario
+ }
 
 
+// Js identifique cuando el usuario ingreso los numeros y que
+
+// document.getElementById('espacioparaelnumtarjeta').addEventListener('input',validar);
+
+
+// function validar() {
+
+//     var tipodecaracter = document.getElementById('espacioparaelnumtarjeta');
+   
+
+//     if(tipodecaracter  /^[0-9]$/ ){
+//         alert = ("estas ingresando un numero");}
+//     else{ alert = ("ingresas algo diferente de un numero");}
+       
+
+   
+
+// }
