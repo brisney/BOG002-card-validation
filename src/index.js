@@ -19,7 +19,7 @@ document.getElementById("validar").onclick = function () { // se ejecuta hasta q
 function cambiarHTML (numerodeti) {//declaran la función en la vamos a mostrar el texto 
     var nombre = document.getElementById("espacioparanombre").value; //usando los datos de espacioparanombre y convirtiendolos en la variable nombre JS
     var fechaven = document.getElementById("espaciofechavencimiento").value;
-        document.getElementById("cuadroform").innerHTML= "Hola " + nombre + " tu numero de tarjeta es " + numerodeti +" y vence el dia " + fechaven ;//imprimiendo el mensjaes con los datos ingresados por el usuario
+        document.getElementById("cuadrovalidar").innerHTML= "Hola " + nombre + " tu número de tarjeta finalizada en " + numerodeti +" con fecha de vencimiento " + fechaven + " es valida/invalida";//imprimiendo el mensjaes con los datos ingresados por el usuario
  }
 
 
