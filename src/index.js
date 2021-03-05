@@ -40,4 +40,4 @@ function cambiarHTML (numerodeti) {//declaran la función en la vamos a mostrar 
 
    
 
-}
+// }
