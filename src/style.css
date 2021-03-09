@@ -17,22 +17,31 @@ header {
 body .casillas {
   color: blue;
 }
- body .titulo {
- color: crimson;
- height: 10px 10px 10px 10px;
- text-align: center;
- background-color: rgb(126, 133, 115);
-}
-body .cuadroformulario {
-  margin: 0 auto; 
-  width: 100%;
+ 
+ 
+
+body .cuadroformulario { 
+  width: 600%;
   max-width: 300px;
-  border: 1px solid #3b3b3b;
-  padding: 20px 20px 20px 20px;
+  /* border: 1px solid #3b3b3b; */
+  /* padding: 40px 40px 20px 40px; */
   background: rgb(123, 128, 128);
   border-radius: 10px;
-  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 5px 16px 0px;
+  padding: 10px 10px 10px 10px;
 }
 footer {
   margin: 200px;
 }
+.titulo {
+  background-color: rgb(126, 133, 115);
+  padding: 10px 10px;
+  text-align: center;
+  color: antiquewhite;
+  border-bottom: 3px solid antiquewhite;
+  height: 10px 10px 10px 10px;
+  line-height: 20px;
+
+}
+

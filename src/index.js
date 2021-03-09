@@ -19,7 +19,7 @@ const formulario = document.getElementById("conjuntodatos");
 formulario.espacioparaelnumtarjeta.addEventListener("keyup", (e) => {// se ejecuta hasta que se da click 
     var inputnumero = e.target.value;  
     formulario.espacioparaelnumtarjeta.value = inputnumero
-    .replace(/([0-9]{4})/g, '$1 ')
+    .replace(/\s/g, '').replace(/\D/g, '').replace(/([0-9]{4})/g, '$1 ')
   .trim ();     
 });
 
