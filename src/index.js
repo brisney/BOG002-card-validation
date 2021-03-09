@@ -3,16 +3,27 @@ import validator from './validator.js';
 
 console.log(validator);
 
+
 //realizamos el evento con un onclick ejecutando la función cambiar HTML para que no permita acceder al siguiente campo sin rellenar 
 
 document.getElementById("validar").onclick = function () { // se ejecuta hasta que se da click
-    
     var imputnumerotarjeta = document.getElementById("espacioparaelnumtarjeta");
     var numerodeti = imputnumerotarjeta.value;  
     if (numerodeti != ""){ cambiarHTML(numerodeti);}
     console.log(numerodeti)
-   
 }
+
+//en este campo solo se va a hacer la validación para ingresar solo números
+const formulario = document.getElementById("conjuntodatos");
+
+formulario.espacioparaelnumtarjeta.addEventListener("keyup", (e) => {// se ejecuta hasta que se da click 
+    var inputnumero = e.target.value;  
+    formulario.espacioparaelnumtarjeta.value = inputnumero
+    .replace(/([0-9]{4})/g, '$1 ')
+  .trim ();     
+});
+
+
 
 //se hace una funcion que imprime los datos ingresados por el usuario en otro cmapo 
 
