@@ -8,7 +8,7 @@ describe('validator', () => {
 
   describe('validator.isValid', () => {
     it('debería ser una función', () => {
-      expect(typeof validator.isValid).toBe('function');
+      expect(typeof validator.isvalid).toBe('function');
     });
 
     it.skip('debería retornar true para "4083952015263"', () => {

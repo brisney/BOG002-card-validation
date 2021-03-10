@@ -1,4 +1,4 @@
-//se llama al objeto de validación de la tarjeta que se encuentra en validator.js
+//se llama al objeto de validación de la tarjeta que se encuentra en validator.js no estamos haciendo nada con esto aun 
 import validator from './validator.js';
 console.log(validator);
 
@@ -20,13 +20,18 @@ let inputbotonreset = document.getElementById("resetear");
 
 //ubicandonos en un campo .evento = le decimos que nos ejecute una funcion que esta definida dentro de los corchetes
     inputbotonvalidar.onclick = function evitarquecambiesiestavacio () { // se ejecuta hasta que se da click
+     
     let numerodeti = inputnumerotarjeta.value;  
-    let nombredeus = inputnombredeusuario
+    let nombredeus = inputnombredeusuario.value;
+
+    console.log(numerodeti)
 
     // la funcion if esta diciendo si (variablenumero de tarjeta es diferente de vacio ejecute lo que esta dentro de los corchetes {}
     if (numerodeti != "" && nombredeus != "" ){ 
+        
         cambiarHTML(numerodeti);
         }
+        validator.isvalid(numerodeti);
     }
 
 //se hace una funcion que imprime los datos ingresados por el usuario en otro cmapo 
@@ -51,15 +56,6 @@ function restringirnumero() {
         inputnumerotarjeta.value= inputnumerotarjeta.value.replace(/\D+/g, '');
 }
 
-function algoritmolung (){
 
-var tamanostring  = numerodeti.length;
-        let cadenaInvertida = "";
+
     
-        while (tamanostring>=0) {
-            cadenaInvertida = cadenaInvertida + numerodeti.charAt(tamanostring);
-            tamanostring--;
-           }
-    
-           console.log (cadenaInvertida);
-    }
