@@ -25,9 +25,19 @@ let inputbotonreset = document.getElementById("resetear");
 
     // la funcion if esta diciendo si (variablenumero de tarjeta es diferente de vacio ejecute lo que esta dentro de los corchetes {}
     if (numerodeti != "" && nombredeus != "" ){ 
+        var tamanostring  = numerodeti.length;
+        let cadenaInvertida = "";
+    
+        while (tamanostring>=0) {
+            cadenaInvertida = cadenaInvertida + numerodeti.charAt(tamanostring);
+            tamanostring--;
+           }
+    
+           console.log (cadenaInvertida);
+    }
         cambiarHTML(numerodeti);
         }
-    }
+    
 
 //se hace una funcion que imprime los datos ingresados por el usuario en otro cmapo 
 function cambiarHTML (numerodeti) {//declaran la función en la vamos a mostrar el texto 
@@ -51,15 +61,6 @@ function restringirnumero() {
         inputnumerotarjeta.value= inputnumerotarjeta.value.replace(/\D+/g, '');
 }
 
-// function algoritmolung (){
+function algoritmolung (){
+}
 
-// var tamanostring  = numerodeti.length;
-//         let cadenaInvertida = "";
-    
-//         while (tamanostring>=0) {
-//             cadenaInvertida = cadenaInvertida + numerodeti.charAt(tamanostring);
-//             tamanostring--;
-//            }
-    
-//            console.log (cadenaInvertida);
-//     }
