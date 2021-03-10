@@ -21,7 +21,7 @@ let inputbotonreset = document.getElementById("resetear");
 //ubicandonos en un campo .evento = le decimos que nos ejecute una funcion que esta definida dentro de los corchetes
     inputbotonvalidar.onclick = function evitarquecambiesiestavacio () { // se ejecuta hasta que se da click
     let numerodeti = inputnumerotarjeta.value;  
-    let nombredeus = inputnombredeusuario
+    let nombredeus = inputnombredeusuario.value;
 
     // la funcion if esta diciendo si (variablenumero de tarjeta es diferente de vacio ejecute lo que esta dentro de los corchetes {}
     if (numerodeti != "" && nombredeus != "" ){ 

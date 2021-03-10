@@ -1,4 +1,4 @@
-body {
+/* body {
   background-color: #89b6ac;
   background-repeat: no-repeat;
   min-height: 100%;
@@ -7,41 +7,68 @@ body {
    }
 header {
   background-color: #8ebebc;
-  height: 25px;
+  height: 5px;
   width: 40%;
   margin: 45px;
   text-align: center;
   color: white;
   line-height: 20px;
-  }
-body .casillas {
+  } */
+/* body .casillas {
   color: blue;
-}
- 
- 
-
-body .cuadroformulario { 
-  width: 600%;
+} */
+.cuadrovalidacion { 
+  width: 100%;
   max-width: 300px;
-  /* border: 1px solid #3b3b3b; */
-  /* padding: 40px 40px 20px 40px; */
-  background: rgb(123, 128, 128);
+  border: 1px solid #3b3b3b;  
+  background: lightblue;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0px 5px 16px 0px;
-  padding: 10px 10px 10px 10px;
-}
-footer {
+  box-shadow: 5px 5px 10px 0px; 
+  padding: 5px 10px 20px 20px;
+}  
+/* footer {
   margin: 200px;
-}
-.titulo {
-  background-color: rgb(126, 133, 115);
-  padding: 10px 10px;
+} */
+ /* .titulo {
+  background:#89b6ac left;
+   height: 30px;
+  width: 50%;
+  margin: 0px; 
+  padding: 20px 80px;
   text-align: center;
-  color: antiquewhite;
-  border-bottom: 3px solid antiquewhite;
-  height: 10px 10px 10px 10px;
-  line-height: 20px;
-
+  color:brown;
+  border-bottom: 5px solid fuchsia; 
+  font-size: 10px;
+  background-size: 10px;
+  right: ; */
+} 
+casillas {
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+} 
+.casillas input {
+ display: block;
+ width: 90%;
+ font-family: 'Times New Roman', Times, serif;
+ border: 1px soli blueviolet; */
+ border-radius: 3px; 
+ border-style: double;
+ padding: 4px;
+ font-size: 15px;
+ margin-top: 5px;  
+} 
+.campo input {
+  display: block;
+  width: 20%;
 }
-
+/* .cuadrovalidacion {
+  margin: 0 auto; 
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #3B3B3B;
+  padding: 20px 20px 20px 20px;
+  background: rgb(123, 128, 128);
+  border-radius: 10px;
+  position: right;  */
+}
