@@ -24,8 +24,6 @@ let inputbotonreset = document.getElementById("resetear");
     let numerodeti = inputnumerotarjeta.value;  
     let nombredeus = inputnombredeusuario.value;
 
-    console.log(numerodeti)
-
     // la funcion if esta diciendo si (variablenumero de tarjeta es diferente de vacio ejecute lo que esta dentro de los corchetes {}
     if (numerodeti != "" && nombredeus != "" ){ 
         
