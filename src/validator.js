@@ -21,15 +21,15 @@ console.log(arrayInvertida);
 
 // los for me ayudan a remplazar las posiciones pares por el numero multipliocado x2
 for (let i = 0; i < arrayInvertida.length; i++) {
-  for (let j     = 0; j < arrayInvertida[i].length; j++) {
-    if ( i%2 === 0) {
+     if ( i%2 != 0) {
       arrayInvertida[i] = (arrayInvertida[i])*2;
       console.log(arrayInvertida);
-     }else{arrayInvertida[i] = (arrayInvertida[i])*1;
+     }else{arrayInvertida[i] = (arrayInvertida[i]*1);
       console.log(arrayInvertida);}
     }
-  }
-console.log(arrayInvertida[2])  
+
+    
+  
 return true;
 
 }
