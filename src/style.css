@@ -42,7 +42,7 @@ header {
   font-size: 10px;
   background-size: 10px;
   right: ; */
-} 
+
 casillas {
   padding-bottom: 5px;
   margin-bottom: 5px;
@@ -51,7 +51,7 @@ casillas {
  display: block;
  width: 90%;
  font-family: 'Times New Roman', Times, serif;
- border: 1px soli blueviolet; */
+ border: 1px soli blueviolet; 
  border-radius: 3px; 
  border-style: double;
  padding: 4px;
@@ -71,4 +71,4 @@ casillas {
   background: rgb(123, 128, 128);
   border-radius: 10px;
   position: right;  */
-}
+
