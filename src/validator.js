@@ -1,5 +1,5 @@
 const validator = {
-  isvalid,maskify,
+  isvalid,
 };
 function isvalid(numerodetarjeta){
     let tamanostring  = numerodetarjeta.length;// identificar cuantos caracteres tiene
@@ -50,18 +50,3 @@ function isvalid(numerodetarjeta){
 }
 
 export default validator;
-
-function maskify (numerodetarjeta) {
-  
-  if ( numerodetarjeta.length>4) {
-    let ultimos = numerodetarjeta;
-
-    ultimos.splice(ultimos.slice(4),1,'#');
-    
-  }
-  
- console.log(ultimos);
-  //  campoformulario.innerHTML= numerodetarjeta;
-}
-
-
