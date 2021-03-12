@@ -1,5 +1,5 @@
 const validator = {
-  isvalid,
+  isvalid,maskify,
 };
 function isvalid(numerodetarjeta){
     let tamanostring  = numerodetarjeta.length;// identificar cuantos caracteres tiene
@@ -23,21 +23,45 @@ function isvalid(numerodetarjeta){
                   arrayInvertida[i] = (arrayInvertida[i])*2;
                   console.log(arrayInvertida);
               }
-              let valor = arrayInvertida[i]; //en la varible valor identficamos las nuevas posiciones 
+              let valor = arrayInvertida[i]; 
                 if(valor >= 10){
-                    let num1 = Number(valor.toString().split('')[0]);//se suma num1 con
-                    let num2 = Number(valor.toString().split('')[1]);//num 2
-                    let sumaNume= num1 + num2; // resultado de los numeros desglozados
+                    let num1 = Number(valor.toString().split('')[0]);
+                    let num2 = Number(valor.toString().split('')[1]);
+                    let sumaNume= num1 + num2; 
                     arrayInvertida[i] = sumaNume;;
               }else if ( i%2 === 0) {
                     arrayInvertida[i] = (arrayInvertida[i]*1);
                     console.log(arrayInvertida);
             
               }
-        }      
-return true;
-
+        }  
+        
+    
+       
+        let totalstring = arrayInvertida.reduce((a, b) => a + b, 0);
+        console.log(totalstring);
+        if ((totalstring % 10) == 0){ 
+          console.log("deberia retornar true");
+          return true;
+          } else {
+            console.log("deberia retornar false");
+          return false;
+         }
 }
 
 export default validator;
+
+function maskify (numerodetarjeta) {
+  
+  if ( numerodetarjeta.length>4) {
+    let ultimos = numerodetarjeta;
+
+    ultimos.splice(ultimos.slice(4),1,'#');
+    
+  }
+  
+ console.log(ultimos);
+  //  campoformulario.innerHTML= numerodetarjeta;
+}
+
 
