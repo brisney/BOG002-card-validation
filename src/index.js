@@ -29,14 +29,15 @@ let inputbotonreset = document.getElementById("resetear");
         
         cambiarHTML(numerodeti);
         }
-        validator.isvalid(numerodeti);
-        validator.maskify(numerodeti);
+        
     }
 
 //se hace una funcion que imprime los datos ingresados por el usuario en otro cmapo 
 function cambiarHTML (numerodeti) {//declaran la función en la vamos a mostrar el texto 
     var nombre = inputnombredeusuario.value; //usando los datos de espacioparanombre y convirtiendolos en la variable nombre JS
     var fechaven = inputnombredeusuariofecha.value;
+    validator.isvalid(numerodeti);
+    // validator.maskify(numerodeti);
     campoformulario.innerHTML= "Hola " + nombre + " tu número de tarjeta finalizada en " + numerodeti +" con fecha de vencimiento " + fechaven + " es valida/invalida";//imprimiendo el mensjaes con los datos ingresados por el usuario
  }
   
