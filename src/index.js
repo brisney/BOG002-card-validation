@@ -36,9 +36,14 @@ let inputbotonreset = document.getElementById("resetear");
 function cambiarHTML (numerodeti) {//declaran la función en la vamos a mostrar el texto 
     var nombre = inputnombredeusuario.value; //usando los datos de espacioparanombre y convirtiendolos en la variable nombre JS
     var fechaven = inputnombredeusuariofecha.value;
-    validator.isvalid(numerodeti);
+    let resultadovalidacion =  validator.isvalid(numerodeti);
+   if (resultadovalidacion ==="false"){
+    resultadovalidacion = "es invalida"
+   }else {"tu tarjeta es valida"
+   resultadovalidacion = "es valida"
+}
     // validator.maskify(numerodeti);
-    campoformulario.innerHTML= "Hola " + nombre + " tu número de tarjeta finalizada en " + numerodeti +" con fecha de vencimiento " + fechaven + " es valida/invalida";//imprimiendo el mensjaes con los datos ingresados por el usuario
+    campoformulario.innerHTML= "Hola " + nombre + " tu número de tarjeta finalizada en " + numerodeti +" con fecha de vencimiento " + fechaven + resultadovalidacion;//imprimiendo el mensjaes con los datos ingresados por el usuario
  }
   
  //evento key up para ingresar el nombre en mayusculas
