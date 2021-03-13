@@ -36,8 +36,6 @@ function isvalid(numerodetarjeta){
               }
         }  
         
-    
-       
         let totalstring = arrayInvertida.reduce((a, b) => a + b, 0);
         console.log(totalstring);
         if ((totalstring % 10) == 0){ 
@@ -48,5 +46,10 @@ function isvalid(numerodetarjeta){
           return false;
          }
 }
+// const validator = {
+//   maskify,
+// };
+
+// function maskify ()   
 
 export default validator;

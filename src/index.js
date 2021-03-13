@@ -37,14 +37,13 @@ function cambiarHTML (numerodeti) {//declaran la función en la vamos a mostrar 
     var nombre = inputnombredeusuario.value; //usando los datos de espacioparanombre y convirtiendolos en la variable nombre JS
     var fechaven = inputnombredeusuariofecha.value;
     let resultadovalidacion =  validator.isvalid(numerodeti);
-   if (resultadovalidacion ==="false"){
-    resultadovalidacion = "es invalida"
-   }else {"tu tarjeta es valida"
-   resultadovalidacion = "es valida"
+   if (resultadovalidacion === false){
+    resultadovalidacion = "invalida";
+   }else {
+   resultadovalidacion = "valida"
 }
-    // validator.maskify(numerodeti);
-    campoformulario.innerHTML= "Hola " + nombre + " tu número de tarjeta finalizada en " + numerodeti +" con fecha de vencimiento " + fechaven + resultadovalidacion;//imprimiendo el mensjaes con los datos ingresados por el usuario
- }
+   campoformulario.innerHTML= "Hola " + nombre + " tu número de tarjeta finalizada en " + numerodeti + " con fecha de vencimiento " + fechaven  + " es " + resultadovalidacion;//imprimiendo el mensjaes con los datos ingresados por el usuario
+}
   
  //evento key up para ingresar el nombre en mayusculas
  inputnombredeusuario.addEventListener("keyup",Restringirnombre );
@@ -58,9 +57,9 @@ function Restringirnombre() {
 inputnumerotarjeta.addEventListener("keyup",restringirnumero );
 
 function restringirnumero() {
-        inputnumerotarjeta.value= inputnumerotarjeta.value.replace(/\D+/g, '');
+        inputnumerotarjeta.value= inputnumerotarjeta.value.replace(/\D+/g, '').replace(/\s/g, '').replace(/([0-9]{4})/g, '$1 ').trim ();
 }
 
 
 
-    
+
