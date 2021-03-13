@@ -1,5 +1,6 @@
 const validator = {
   isvalid,
+  maskify,
 };
 function isvalid(numerodetarjeta){
     let tamanostring  = numerodetarjeta.length;// identificar cuantos caracteres tiene
@@ -46,10 +47,11 @@ function isvalid(numerodetarjeta){
           return false;
          }
 }
-// const validator = {
-//   maskify,
-// };
 
-// function maskify ()   
+function maskify (numtarjeta) {
+  let cadenastring = numtarjeta.replace(/.(?=.{4})/g, "#");
+  console.log (cadenastring)
+  return cadenastring
+} 
 
 export default validator;

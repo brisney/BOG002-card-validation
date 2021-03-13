@@ -42,7 +42,8 @@ function cambiarHTML (numerodeti) {//declaran la función en la vamos a mostrar 
    }else {
    resultadovalidacion = "valida"
 }
-   campoformulario.innerHTML= "Hola " + nombre + " tu número de tarjeta finalizada en " + numerodeti + " con fecha de vencimiento " + fechaven  + " es " + resultadovalidacion;//imprimiendo el mensjaes con los datos ingresados por el usuario
+    let stringmaskif =  validator.maskify(numerodeti);
+   campoformulario.innerHTML= "Hola " + nombre + " tu número de tarjeta finalizada en " + stringmaskif + " con fecha de vencimiento " + fechaven  + " es " + resultadovalidacion;//imprimiendo el mensjaes con los datos ingresados por el usuario
 }
   
  //evento key up para ingresar el nombre en mayusculas
@@ -57,7 +58,7 @@ function Restringirnombre() {
 inputnumerotarjeta.addEventListener("keyup",restringirnumero );
 
 function restringirnumero() {
-        inputnumerotarjeta.value= inputnumerotarjeta.value.replace(/\D+/g, '').replace(/\s/g, '').replace(/([0-9]{4})/g, '$1 ').trim ();
+        inputnumerotarjeta.value= inputnumerotarjeta.value.replace(/\D+/g, '').replace(/\s/g, '').trim ();
 }
 
 
