@@ -15,11 +15,11 @@ describe('validator', () => {
       expect(validator.isvalid("4083952015263")).toBe(true);
     });
 
-    it.skip('debería retornar true para "79927398713"', () => {
+    it('debería retornar true para "79927398713"', () => {
       expect(validator.isvalid("79927398713")).toBe(true);
     });
 
-    it.skip('debería retornar false para "1234567890"', () => {
+    it('debería retornar false para "1234567890"', () => {
       expect(validator.isvalid("1234567890")).toBe(false);
     });
   });
@@ -29,16 +29,16 @@ describe('validator', () => {
       expect(typeof validator.maskify).toBe('function');
     });
 
-    it.skip('Debería retornar "############5616" para "4556364607935616"', () => {
-      // escribe aquí tu test
+    it('Debería retornar "############5616" para "4556364607935616"', () => {
+      expect(validator.maskify("4556364607935616")).toBe("############5616");
     });
 
-    it.skip('Debería retornar "1" para "1"', () => {
-      // escribe aquí tu test
+    it('Debería retornar "1" para "1"', () => {
+      expect(validator.maskify("1")).toBe("1");
     });
 
-    it.skip('Debería retornar "######orld" para "helloworld"', () => {
-      // escribe aquí tu test
+    it('Debería retornar "######orld" para "helloworld"', () => {
+      expect(validator.maskify("helloworld")).toBe("######orld");
     });
   });
 });
