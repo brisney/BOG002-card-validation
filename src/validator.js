@@ -39,7 +39,7 @@ function isvalid(numerodetarjeta){
         
         let totalstring = arrayInvertida.reduce((a, b) => a + b, 0);
         console.log(totalstring);
-        if ((totalstring % 10) == 0){ 
+        if ((totalstring % 10) === 0){ 
           console.log("deberia retornar true");
           return true;
           } else {

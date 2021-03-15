@@ -1,11 +1,22 @@
-/* body {
-  background-color: #89b6ac;
+ body {
+  background-color: #889292; 
   background-repeat: no-repeat;
+  background-image: url(https://www.anaitgames.com/wp-content/uploads/2020/08/steam-recuerda-su-normativa-promocion-plataformas2.jpg);
+  /*line-height: 200px;
+  margin-top: auto;
+  margin-bottom: auto; */
+  /* width: 100px;
+  height: 100px;
+  object-fit: cover;
+  object-position: center; */
+  /* display: block;
+  margin-left: auto;
+  margin-right: auto; */
+  /* position image: center;
   min-height: 100%;
-   background-image: url("https://www.bbva.com/wp-content/uploads/2016/11/imagen_apertura_evitar_descubiertos_1150x437.jpg");
-   background-size: cover;
+   background-size: cover; */
    }
-header {
+/*header {
   background-color: #8ebebc;
   height: 5px;
   width: 40%;
@@ -17,7 +28,7 @@ header {
 /* body .casillas {
   color: blue;
 } */
-.cuadrovalidacion { 
+/* .cuadrovalidacion { 
   width: 100%;
   max-width: 300px;
   border: 1px solid #3b3b3b;  
@@ -26,7 +37,7 @@ header {
   overflow: hidden;
   box-shadow: 5px 5px 10px 0px; 
   padding: 5px 10px 20px 20px;
-}  
+}   */
 /* footer {
   margin: 200px;
 } */
@@ -43,7 +54,7 @@ header {
   background-size: 10px;
   right: ; */
 
-casillas {
+ casillas {
   padding-bottom: 5px;
   margin-bottom: 5px;
 } 
@@ -61,14 +72,15 @@ casillas {
 .campo input {
   display: block;
   width: 20%;
-}
-/* .cuadrovalidacion {
+} 
+ .cuadrovalidacion {
   margin: 0 auto; 
   width: 100%;
   max-width: 300px;
   border: 1px solid #3B3B3B;
   padding: 20px 20px 20px 20px;
-  background: rgb(123, 128, 128);
+  background: rgb(169, 197, 197);
   border-radius: 10px;
-  position: right;  */
+  position: right;  
+ }
 
