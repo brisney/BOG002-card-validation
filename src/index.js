@@ -6,11 +6,11 @@ console.log(validator);
 // declara variables es como bautizar en JS 
 
 //var nombredelavariablenJS = (se va a declarar como) la información que encuentre en el HTML con el id que se pone en comillas
-let campoformulario = document.getElementById("conjuntodatos");
+let campoformulario = document.getElementById("cuadrovalidar");
 let inputnumerotarjeta = document.getElementById("espacioparaelnumtarjeta");
 let inputnombredeusuario = document.getElementById("espacioparanombre");
 let inputnombredeusuariofecha = document.getElementById("espaciofechavencimiento");
-let inputedadusuario= document.getElementById("espacioparaedad");
+let enunciadoInvalido= document.getElementById("enunciadoForm");
 let inputbotonvalidar = document.getElementById("validar");
 let inputbotonreset = document.getElementById("resetear");
 
@@ -37,13 +37,28 @@ function cambiarHTML (numerodeti) {//declaran la función en la vamos a mostrar 
     var nombre = inputnombredeusuario.value; //usando los datos de espacioparanombre y convirtiendolos en la variable nombre JS
     var fechaven = inputnombredeusuariofecha.value;
     let resultadovalidacion =  validator.isvalid(numerodeti);
-   if (resultadovalidacion === false){
-    resultadovalidacion = "invalida";
-   }else {
-   resultadovalidacion = "valida"
-}
     let stringmaskif =  validator.maskify(numerodeti);
-   campoformulario.innerHTML= "Hola " + nombre + " tu número de tarjeta finalizada en " + stringmaskif + " con fecha de vencimiento " + fechaven  + " es " + resultadovalidacion;//imprimiendo el mensjaes con los datos ingresados por el usuario
+
+    if (resultadovalidacion === true ){
+      
+       resultadovalidacion = "valida";
+       
+       campoformulario.innerHTML= "Hola " + nombre + " tu número de tarjeta finalizada en " + stringmaskif + " con fecha de vencimiento " + fechaven  + " es " + resultadovalidacion;//imprimiendo el mensjaes con los datos ingresados por el usuario
+    } else {
+        resultadovalidacion = "invalida";
+        enunciadoInvalido.innerHTML= "Tu tarjeta es " +resultadovalidacion + " por favor consigna de nuevo los datos ";
+    }
+
+//    if (resultadovalidacion === false ){
+//     resultadovalidacion = "invalida";
+//     campoformulario.innerHTML=  " Tu tarjeta es  " + resultadovalidacion + " por favor ingresa de nuevo ";//imprimiendo el mensjaes con los datos ingresados por el usuario
+//    }else {
+//    resultadovalidacion = "valida"
+   
+//    campoformulario.innerHTML= "Hola " + nombre + " tu número de tarjeta finalizada en " + stringmaskif + " con fecha de vencimiento " + fechaven  + " es " + resultadovalidacion;//imprimiendo el mensjaes con los datos ingresados por el usuario
+// }
+    
+   
 }
   
  //evento key up para ingresar el nombre en mayusculas
@@ -51,7 +66,7 @@ function cambiarHTML (numerodeti) {//declaran la función en la vamos a mostrar 
 
 function Restringirnombre() {
    // declaro la variable nombre en JS que toma la información de espacio para nombre
-   inputnombredeusuario.value = inputnombredeusuario.value.toUpperCase(); //tomo el valor del nombre y a cada caracter le pongo mayusculas 
+      inputnombredeusuario.value = inputnombredeusuario.value.toUpperCase(); //tomo el valor del nombre y a cada caracter le pongo mayusculas 
 }
  
 //evento key up para ingresar solo caracteres numericos en el campo de la tarjeta

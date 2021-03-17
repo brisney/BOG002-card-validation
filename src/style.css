@@ -1,64 +1,18 @@
- body {
-  background-color: #889292; 
-  background-repeat: no-repeat;
-  background-image: url(https://www.anaitgames.com/wp-content/uploads/2020/08/steam-recuerda-su-normativa-promocion-plataformas2.jpg);
-  /*line-height: 200px;
-  margin-top: auto;
-  margin-bottom: auto; */
-  /* width: 100px;
-  height: 100px;
-  object-fit: cover;
-  object-position: center; */
-  /* display: block;
-  margin-left: auto;
-  margin-right: auto; */
-  /* position image: center;
-  min-height: 100%;
-   background-size: cover; */
-   }
-/*header {
-  background-color: #8ebebc;
-  height: 5px;
-  width: 40%;
-  margin: 45px;
-  text-align: center;
-  color: white;
-  line-height: 20px;
-  } */
-/* body .casillas {
-  color: blue;
-} */
-/* .cuadrovalidacion { 
-  width: 100%;
-  max-width: 300px;
-  border: 1px solid #3b3b3b;  
-  background: lightblue;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 5px 5px 10px 0px; 
-  padding: 5px 10px 20px 20px;
-}   */
-/* footer {
-  margin: 200px;
-} */
- /* .titulo {
-  background:#89b6ac left;
-   height: 30px;
-  width: 50%;
-  margin: 0px; 
-  padding: 20px 80px;
-  text-align: center;
-  color:brown;
-  border-bottom: 5px solid fuchsia; 
-  font-size: 10px;
-  background-size: 10px;
-  right: ; */
-
- casillas {
+body {
+  /* linear-gradient(rgba(0,0,0,0.75),(rgba(0,0,0,0.75)), */
+  background-image:url(https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2019/09/hoy-estrena-uplay-juega-100-juegos-pc-gratis.jpg);
+  /* background-image: ; */
+  font-family: sans-serif;
+/* width: 100%; */
+background-size: cover;
+background-size: center;
+}
+ /* casillas {
   padding-bottom: 5px;
   margin-bottom: 5px;
-} 
+}  */
 .casillas input {
+  
  display: block;
  width: 90%;
  font-family: 'Times New Roman', Times, serif;
@@ -74,6 +28,7 @@
   width: 20%;
 } 
  .cuadrovalidacion {
+   
   margin: 0 auto; 
   width: 100%;
   max-width: 300px;
@@ -84,3 +39,5 @@
   position: right;  
  }
 
+ /* header{background-color: #FF0000;} */
+ 
