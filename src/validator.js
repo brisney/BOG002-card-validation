@@ -50,8 +50,8 @@ function isvalid(numerodetarjeta) {
 
 function maskify(numtarjeta) {
   let cadenastring = numtarjeta.replace(/.(?=.{4})/g, "#");
-  console.log(cadenastring)
-  return cadenastring
+  console.log(cadenastring);
+  return cadenastring;
 }
 
 export default validator;
