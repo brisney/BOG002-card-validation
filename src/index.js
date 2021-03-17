@@ -6,7 +6,7 @@ console.log(validator);
 // declara variables es como bautizar en JS 
 
 //var nombredelavariablenJS = (se va a declarar como) la información que encuentre en el HTML con el id que se pone en comillas
-let campoformulario = document.getElementById("conjuntodatos");
+let campoformulario = document.getElementById("cuadrovalidar");
 let inputnumerotarjeta = document.getElementById("espacioparaelnumtarjeta");
 let inputnombredeusuario = document.getElementById("espacioparanombre");
 let inputnombredeusuariofecha = document.getElementById("espaciofechavencimiento");

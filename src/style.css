@@ -1,34 +1,59 @@
- body {
-  background-color: #889292; 
+  body {
+   background-color: #8e98a8;    
+ } 
+ img {
+    /* background-image: url("steamimagen.jpg");  */
+    /* display: box;   */
+    margin-top: 110px; 
+    height: 450px;  
+    width: 890px; 
+   
+ }
+ .container {
+  margin-left: 150px;
+  margin-right: 10px;
   background-repeat: no-repeat;
-  background-image: url(https://www.anaitgames.com/wp-content/uploads/2020/08/steam-recuerda-su-normativa-promocion-plataformas2.jpg);
-  /*line-height: 200px;
-  margin-top: auto;
-  margin-bottom: auto; */
-  /* width: 100px;
-  height: 100px;
-  object-fit: cover;
-  object-position: center; */
-  /* display: block;
+ }
+   /* padding: 0px 60px; */
+   /* left: 0px; */
+   /* height: 40px;
+ } */ 
+   /* background-image: url("steamimagen.jpg"); 
+   display: flex;
+ } */
+   /* margin-left: 50px;
+   margin-top: 60px; */
+  /* padding-top: 600px; */
+  /* .imagen1 {
+  height: 400px;
+  left: 300px; 
   margin-left: auto;
   margin-right: auto; */
-  /* position image: center;
+  /* display: table-cell; 
+  line-height: 200px;
+  margin-top: auto;
+  margin-bottom: auto;
+   width: 100px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
   min-height: 100%;
    background-size: cover; */
-   }
-/*header {
-  background-color: #8ebebc;
+
+
+/* header {
+  background-color: #8ebebc; 
   height: 5px;
   width: 40%;
   margin: 45px;
   text-align: center;
   color: white;
   line-height: 20px;
-  } */
-/* body .casillas {
+  } 
+ body .casillas {
   color: blue;
-} */
-/* .cuadrovalidacion { 
+} 
+.cuadrovalidacion { 
   width: 100%;
   max-width: 300px;
   border: 1px solid #3b3b3b;  
@@ -37,24 +62,34 @@
   overflow: hidden;
   box-shadow: 5px 5px 10px 0px; 
   padding: 5px 10px 20px 20px;
-}   */
-/* footer {
+}   
+footer {
   margin: 200px;
-} */
- /* .titulo {
-  background:#89b6ac left;
-   height: 30px;
-  width: 50%;
-  margin: 0px; 
-  padding: 20px 80px;
-  text-align: center;
+}  */
+ .titulo { 
+  /* background:#89b6ac left; */
+ left: 0px;
+ right: opx;
+ height: 50px;  
+ text-align: center;
+ width: 190px;  
+ border-bottom: 2px solid blueviolet;
+ position: relative;
+ padding: 20px 35px 10px; 
+ border-radius: 0px;
+ display: flex;
+ /* margin-top: 0px; */
+   /* margin: 0px; 
+  padding: 20px 80px
+  text-align: center; */
+  background-color: #8ebebc; 
   color:brown;
-  border-bottom: 5px solid fuchsia; 
+  /* border-bottom: 5px solid fuchsia; 
   font-size: 10px;
-  background-size: 10px;
-  right: ; */
+  background-size: 10px; */
+ }  */
 
- casillas {
+.casillas {
   padding-bottom: 5px;
   margin-bottom: 5px;
 } 
@@ -65,9 +100,10 @@
  border: 1px soli blueviolet; 
  border-radius: 3px; 
  border-style: double;
- padding: 4px;
+ padding: 4px 4px 4px 4px;
  font-size: 15px;
- margin-top: 5px;  
+ margin-top: 5px;
+ left: 15px;  
 } 
 .campo input {
   display: block;
@@ -75,12 +111,13 @@
 } 
  .cuadrovalidacion {
   margin: 0 auto; 
-  width: 100%;
-  max-width: 300px;
-  border: 1px solid #3B3B3B;
-  padding: 20px 20px 20px 20px;
+  height: 300px;
+  width: 250px;
+  max-width: 300px; 
+  border: 2px solid #3B3B3B;
+  padding: 0px 10px 20px 0px;
   background: rgb(169, 197, 197);
   border-radius: 10px;
   position: right;  
- }
+ } 
 
